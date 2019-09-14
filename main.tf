@@ -1590,7 +1590,6 @@ resource "aws_s3_bucket" "elb_logs" {
 
 module "tld" {
   source    = "git::https://github.com/cloudposse/terraform-aws-route53-cluster-hostname.git?ref=tags/0.3.0"
-  namespace = var.namespace
   name      = var.name
   zone_id   = var.zone_id
   records   = [aws_elastic_beanstalk_environment.default.cname]
