@@ -1589,7 +1589,7 @@ resource "aws_s3_bucket" "elb_logs" {
 }
 
 module "tld" {
-  source    = "git::https://github.com/cloudposse/terraform-aws-route53-cluster-hostname.git?ref=tags/0.2.5"
+  source    = "git::https://github.com/cloudposse/terraform-aws-route53-cluster-hostname.git?ref=tags/0.3.0"
   namespace = var.namespace
   name      = var.name
   stage     = var.stage
